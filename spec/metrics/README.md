@@ -4,8 +4,6 @@ Inspired by [Eclipse Microprofile Metrics](https://github.com/eclipse/microprofi
 This POC will focus on microprofile-metrics for webservices.
 
 The metrics will be stored in a local registry and will be exposed to the monitoring server via /metrics route.
-
-## Metrics Setup
 Metrics that are exposed need to be configured in the server. On top of the pure metrics, metadata needs to be provided.
 
 The following three sets of sub-resource (scopes) are exposed.
@@ -57,3 +55,16 @@ We want to be able to standartize metric-names, meaning, for an outbound HTTP ca
 Tags are also useful to expose: app-name, instance-id, cluster-name, service-name, region/zone and etc.
 
 Example:  `outbound_http_latency_seconds{region="eu-west-1",path="/foo"}`
+
+## Metadata
+Immutable static Metric information to be provided by the implementor, and which includes:
+* metric name
+* metric unit
+* metric type (counter, gauge, timer, histogram and etc)
+* description (optional)
+* displayName (optional)
+* reusable (optional): If set to true, then it is allowed to register a metric multiple times under the
+same MetricID. 
+
+The MetricID consists of the metric’s name and tags (if supplied). This is used by the MetricRegistry
+to uniquely identify a metric and its corresponding metadata.
