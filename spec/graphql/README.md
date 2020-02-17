@@ -9,6 +9,7 @@ GraphiQL is a powerfull graphical UI that enables a smooth and easy API discover
 
 Just navigate to `/graphql` in your browser and you'll see [GraphiQL](https://github.com/graphql/graphiql/)
 
+![https://raw.githubusercontent.com/graphql/graphiql/master/packages/graphiql/resources/graphiql.jpg](https://raw.githubusercontent.com/graphql/graphiql/master/packages/graphiql/resources/graphiql.jpg)
 
 ## About
 
@@ -60,9 +61,7 @@ The official purpose of MicroProfile is to optimize development for a microservi
 
 GraphQL is already widely used in Microservices architectures as the API Endpoint.
 
-As noted in the Known java libraries section, there are several Java-based GraphQL libraries available, but none with the reach of the MicroProfile community.
-
-GraphQL continues to grow in popularity, and as such there should be a specification for GraphQL development in Java.
+GraphQL continues to grow in popularity, and as such there should be a specification for GraphQL development.
 
 MicroProfile is the optimal place to host that standard as it is open, ideally suited for incubating technologies, and has broad reach both in terms of the user community and vendor support.
 
