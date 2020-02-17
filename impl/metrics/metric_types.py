@@ -38,5 +38,3 @@ class MetricTypes(Enum):
             if t.value == string:
                 return t
         return MetricTypes.INVALID
-
-# assert(MetricTypes.CONCURRENT_GAUGE == MetricTypes.metric_from('concurrent gauge'))
