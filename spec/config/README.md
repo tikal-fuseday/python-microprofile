@@ -1,4 +1,4 @@
-#Microprofile - Config
+# Microprofile - Config
 
 Configuration is an essential part of Microprofile implementation.
 ## Specifications
