@@ -1,6 +1,6 @@
 from abc import abstractmethod
 
-from spec.health.src.healthcheck_response import HealthcheckResponse
+from spec.health.microhealth.healthcheck_response import HealthcheckResponse
 
 
 class Healthcheck:
