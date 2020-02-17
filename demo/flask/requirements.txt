@@ -1,3 +1,8 @@
 Flask==1.1.1
+opentracing>=2,<3
+jaeger-client
+opentracing-utils
+basictracer
+lightstep
 flask_graphql==2.0.1
 graphene==2.1.1
