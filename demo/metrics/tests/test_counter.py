@@ -1,5 +1,5 @@
 import unittest
-from impl.metrics.counter import Counter
+from demo.metrics.counter import Counter
 
 
 class TestCounter(unittest.TestCase):
