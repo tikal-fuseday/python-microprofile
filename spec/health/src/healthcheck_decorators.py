@@ -4,7 +4,6 @@ import logging
 from spec.health.src.healthcheck_response import HealthcheckResponse
 
 
-
 def healthcheck(func):
     @functools.wraps(func)
     def wrapper_healthcheck_check(*args, **kwargs) -> HealthcheckResponse:
@@ -17,4 +16,3 @@ def healthcheck(func):
         return res
 
     return wrapper_healthcheck_check
-

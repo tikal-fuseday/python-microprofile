@@ -99,4 +99,4 @@ It's the responsibility of the runtime to gather all `HealthCheckResponse` s for
   }
 ```
 
-The link:https://github.com/eclipse/microprofile-health/tree/master/spec/src/main/asciidoc/protocol-wireformat.adoc[companion document] contains further information on forms of interaction and the wireformat.
+The link: [companion object](https://github.com/eclipse/microprofile-health/tree/master/spec/src/main/asciidoc/protocol-wireformat.adoc) contains further information on forms of interaction and the wireformat.
