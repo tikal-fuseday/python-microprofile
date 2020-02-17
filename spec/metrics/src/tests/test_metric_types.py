@@ -1,5 +1,5 @@
 import unittest
-from demo.metrics.metric_types import MetricTypes
+from spec.metrics.src.metric_types import MetricTypes
 
 
 class TestMetricTypes(unittest.TestCase):

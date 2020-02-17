@@ -1,5 +1,5 @@
 import unittest
-from demo.metrics.tag import Tag
+from spec.metrics.src.tag import Tag
 
 
 class TestTag(unittest.TestCase):
