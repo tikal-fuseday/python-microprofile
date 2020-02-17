@@ -51,3 +51,7 @@ Two metrics will be published:
 // TODO
 
 ## Metrics Tags
+We want to be able to standartize metric-names, meaning, for an outbound HTTP call we'll want to publish a metric called: 
+`outbound_http_latency_seconds`. The way to differentiate between different outbound calls will be by tags (labels).
+
+Tags are also useful to expose: app-name, instance-id, cluster-name, service-name, region/zone and etc. 
