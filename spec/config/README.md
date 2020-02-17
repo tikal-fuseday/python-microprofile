@@ -1,6 +1,6 @@
 # Microprofile - Config
 
-Configuration is an essential part of Microprofile implementation.
+Configuration is an essential part of Microprofile specification.
 ## Specifications
 The full spec can be found here: [1.4 Spec](https://download.eclipse.org/microprofile/microprofile-config-1.4/microprofile-config-spec.pdf).
 
