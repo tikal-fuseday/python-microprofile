@@ -1,15 +1,15 @@
 
-= Microprofile Python GraphQL Specification
+__Microprofile Python GraphQL Specification__
 
 
-Specification::
+__Specification:__
 
 GraphiQL is a powerfull graphical UI that enables a smooth and easy API discovery.
 
 Just navigate to `/graphql` in your browser and you'll see [GraphiQL](https://github.com/graphql/graphiql/)
 
 
-== About
+__About__
 
 GraphQL is an open-source data query and manipulation language for APIs, and a runtime for fulfilling queries with existing data.
 
@@ -17,7 +17,7 @@ It provides an alternative, though not necessarily a replacement for REST.
 
 GraphQL was developed internally by Facebook in 2012 before being publicly released in 2015.
 
-== What is GraphQL?
+__What is GraphQL?__
 GraphQL is a query language for your API, and a server-side runtime for executing queries by using a type system you define for your data. GraphQL isn't tied to any specific database or storage engine and is instead backed by your existing code and data. [From [graphql.org](https://graphql.org/learn/)]
 
 GraphQL is used by many large and small customers including Atlassian, Coursera, Facebook, GitHub, PayPal, Twitter, and https://graphql.org/users/[many more].
@@ -32,7 +32,7 @@ GraphQL is used by many large and small customers including Atlassian, Coursera,
 
   
 
-== Why GraphQL
+__Why GraphQL__
 
 The main reasons developers might want to use GraphQL are:
 
@@ -52,9 +52,8 @@ The main reasons developers might want to use GraphQL are:
 
   
 
-== Why MicroProfile
+__Why MicroProfile__
 
-  
 
 The official purpose of MicroProfile is to optimize development for a microservices architecture and delivers application portability across multiple MicroProfile runtimes.
 
@@ -68,7 +67,7 @@ MicroProfile is the optimal place to host that standard as it is open, ideally s
 
   
 
-== What GraphQL is not
+__What GraphQL is not__
   
 
 This specification will focus on making it easy for developers to create a GraphQL Service/Endpoint and publish it as an API.
