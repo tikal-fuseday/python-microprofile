@@ -2,7 +2,7 @@ import unittest
 from impl.metrics.metric_types import MetricTypes
 
 
-class MyTestCase(unittest.TestCase):
+class TestMetricTypes(unittest.TestCase):
     def test_metric_from(self):
         self.assertEqual(MetricTypes.CONCURRENT_GAUGE, MetricTypes.metric_from('concurrent gauge'))
 

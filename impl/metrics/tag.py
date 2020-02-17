@@ -9,9 +9,9 @@ class Tag:
     def __init__(self, name, value):
         # Constructs the Tag object with the given tag name and tag value
         #
-        # tagName The tag name, must match the regex [a-zA-Z_][a-zA-Z0-9_]#.
+        # tagName The tag name, must match the regex [a-zA-Z_][a-zA-Z0-9_]
         # tagValue The tag value
-        # raises IllegalArgumentException If the tagName does not match [a-zA-Z_][a-zA-Z0-9_]#
+        # raises IllegalArgumentException If the tagName does not match [a-zA-Z_][a-zA-Z0-9_]
         if not name or not value:
             raise Exception('Invalid arguments. Tag name: [{}], Tag value: [{}]'.format(name, value))
 
