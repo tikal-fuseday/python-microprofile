@@ -18,11 +18,17 @@ class Tag:
         if not Tag.PATTERN.match(name):
             raise Exception('Invalid Tag name: [{}]'.format(name))
 
-        self.tagName = name
-        self.tagValue = value
+        self.name = name
+        self.value = value
 
     def get_tag_name(self):
-        return self.tagName
+        return self.name
 
     def get_tag_value(self):
-        return self.tagValue
+        return self.value
+
+    def __eq__(self, other):
+        if not isinstance(other, Tag):
+            return False
+
+        return self.name == other.name and self.value == other.value
