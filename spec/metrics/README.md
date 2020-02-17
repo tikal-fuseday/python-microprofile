@@ -16,12 +16,38 @@ vendor: vendor specific metrics (optional), these metrics will be exposed under 
 
 application: application-specific metrics (optional), these metrics will be exposed under `/metrics/application`
 
-### Base Metrics
+## Base Metrics
 Microprofile divides base-metrics into two categories: [required](https://github.com/eclipse/microprofile-metrics/blob/master/spec/src/main/asciidoc/required-metrics.adoc#required-metrics) and [optional](https://github.com/eclipse/microprofile-metrics/blob/master/spec/src/main/asciidoc/required-metrics.adoc#thread-pool-stats).
-As you can see, many of these metrics are Java specific and deal with the JVM. In this POC we will treat all these metrics as optional.
+As you can see, many of these metrics are Java specific and deal with the JVM. In this POC we will treat all these metrics as optional and instead, try to come up with a broader, more generic set of base-metrics.
 
-### Vendor Metrics (Optional)
+### CPU Utilization
+* CPU usage in percentage
+and breakdown by:
+* (optional) processes executing in user mode (percentage)
+* (optional) processes executing in kernel mode (percentage)
+
+### Memory
+Two metrics will be published:
+* total memory (bytes)
+* used memory (bytes)
+
+### Disk
+Two metrics will be published:
+* disk space total (bytes)
+* disk space used (bytes)
+
+### Network
+* packets transmitted, received (count)
+* bytes transmitted, received (bytes)
+* (optional) packets dropped by the driver on transmit, receive (count)
+* (optional) total number of sockets in kernel socket lists (count);
+* (optional) TCP sockets currently in use (count);
+* (optional) UDP sockets currently in use (count)
+
+## Vendor Metrics (Optional)
 // TODO
 
-### Application Metrics (Optional) 
+## Application Metrics (Optional) 
 // TODO
+
+## Metrics Tags
