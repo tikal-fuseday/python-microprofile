@@ -1,7 +1,7 @@
 from enum import Enum
 
 
-class MetricUnits:
+class MetricUnits(Enum):
     NONE = "none"
 
     BITS = "bits"
