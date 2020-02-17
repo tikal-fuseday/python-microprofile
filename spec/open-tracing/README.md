@@ -28,4 +28,56 @@ https://opentracing.io/specification/
 ## Implementation
 The implementation will based on  https://github.com/opentracing/opentracing-python
 
- 
+The following library has been found: opentracing-utils
+
+* No extrenal dependencies, only opentracing-python.
+* No threadlocals. Either pass spans explicitly or fallback to callstack frames inspection!
+* Context agnostic, so no external context implementation dependency (no Tornado, Flask, Django etc …).
+* Try to be less verbose - just add the @trace decorator.
+* Could be more verbose when needed, without complexity - just accept **kwargs and get the span passed to your traced functions via @trace(pass_span=True).
+* Support asyncio/async-await coroutines. (drop support for py2.7)
+* Support gevent
+* Ability to add OpenTracing support to external libs/frameworks/clients:
+        Django (via OpenTracingHttpMiddleware)
+        Flask (via trace_flask())
+        Requests (via trace_requests())
+        SQLAlchemy (via trace_sqlalchemy())
+        
+## API Examples
+```python
+# Normal traced function
+@trace()
+def trace_me():
+    pass
+
+# Traced function with access to created span in ``kwargs``
+@trace(operation_name='user.operation', pass_span=True)
+def user_operation(user, op, **kwargs):
+    current_span = extract_span_from_kwargs(**kwargs)
+
+    current_span.set_tag('user.id', user.id)
+
+    # Then do stuff ...
+
+    # trace_me will have ``current_span`` as its parent.
+    trace_me()
+
+# Traced function using ``follows_from`` instead of ``child_of`` reference.
+@trace(use_follows_from=True)
+def trace_me_later():
+    pass
+
+
+# Start a fresh trace - any parent spans will be ignored
+@trace(operation_name='epoch', ignore_parent_span=True)
+def start_fresh():
+
+    user = {'id': 1}
+
+    # trace decorator will handle trace heirarchy
+    user_operation(user, 'create')
+
+    # trace_me will have ``epoch`` span as its parent.
+    trace_me()
+
+```
