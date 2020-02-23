@@ -27,9 +27,7 @@ In cases that there is nothing we try to implement them ourselfs.
 
 ## setup env
 
-for mac install python3
-
-`brew install python3` 
+[How to install python3 on OSX](https://gist.github.com/alfasin/bc88d4eb0217f13cbc7ccef53e8eadb3)
 
 ### setup env
 
