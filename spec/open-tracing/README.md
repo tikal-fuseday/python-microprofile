@@ -30,7 +30,7 @@ The implementation will based on  https://github.com/opentracing/opentracing-pyt
 
 The following library has been found: opentracing-utils
 
-* No extrenal dependencies, only opentracing-python.
+* No extrenal dependencies, only ![opentracing-python](https://github.com/zalando-zmon/opentracing-utils).
 * No threadlocals. Either pass spans explicitly or fallback to callstack frames inspection!
 * Context agnostic, so no external context implementation dependency (no Tornado, Flask, Django etc …).
 * Try to be less verbose - just add the @trace decorator.
