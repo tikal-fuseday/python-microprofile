@@ -25,9 +25,12 @@ In this project we try to collect into one place the best practices and implemen
 You can see in each spec what we have found to be the best packages that come closest to the microprofile standard.
 In cases that there is nothing we try to implement them ourselfs.
 
-## setup env
+## Installing Python 3
 
-[How to install python3 on OSX](https://gist.github.com/alfasin/bc88d4eb0217f13cbc7ccef53e8eadb3)
+For mac install python3
+`brew install python3` 
+
+Also check out [How to install python3 on OSX](https://gist.github.com/alfasin/bc88d4eb0217f13cbc7ccef53e8eadb3)
 
 ### setup env
 
